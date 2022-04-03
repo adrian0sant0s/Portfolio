@@ -24,14 +24,25 @@ export const Logo = Styled.h1`
     font-size: 2.5rem;
 `;
 
-export const Ul = Styled.ul`
+export const ContainerLinks = Styled.div`
     display: flex;
-    text-transform: uppercase;
-    list-style: none;
+    gap: 80px;
 `;
 
-export const Options = Styled.li`
-    padding:10px;
+export const Links = Styled.a`
+    text-decoration: none;
+
+    font-style: normal;
+    font-weight: bold;
+    line-height: 40px;
+    color:#eee;
+    font-size: 1.5rem;
+
+    &:hover{
+        transform: scale(1.1);
+        transition: transform 0.5s ;
+    }
+
 `;
 
 /* <header> */
@@ -47,8 +58,10 @@ export const Header = Styled.div`
 export const ContainerHeader = Styled.div`
     display: flex;
     justify-content: space-around;
+    gap: 150px;
     align-items: center;
     height: 100vh;
+    
 `;
 
 export const ImageHeader = Styled.img`
@@ -57,25 +70,28 @@ export const ImageHeader = Styled.img`
 
     height: 350px;
     width: 350px;
-
 `;
 
-export const ContainerLinks = Styled.div`
+export const ContainerOptions = Styled.div`
     display: flex;
     flex-direction: column;
-    gap: 100px;
-`;
-
-export const Links = Styled.a`
-    padding-right: 10px ;
+    gap: 30px;
     
-    text-decoration: none;
 
-    font-style: normal;
-    font-weight: bold;
-    font-size: 34px;
-    line-height: 40px;
-    color:#eee;
-    font-size: 3rem;
+    p{
+        
+        cursor: pointer;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 40px;
+        color:#eee;
+        font-size: 1.5rem;
 
+        &:hover{
+        transform: scale(1.5);
+        transition: transform 0.5s ;
+        }
+
+    }
+    
 `;
