@@ -59,6 +59,7 @@ export const Links = Styled.a`
 
     @media (max-width: 900px) {
     font-size:1.9rem;
+    }
 
     @media (max-width: 450px) {
     font-size: 1.5rem;
@@ -66,7 +67,7 @@ export const Links = Styled.a`
 
     &:hover{
         transform: scale(1.1);
-        transition: transform 0.5s ;
+        transition: transform 0.5s;
     }
 
 `;
@@ -75,7 +76,6 @@ export const Links = Styled.a`
 
 export const Header = Styled.div`
     height: 100vh;
-    
     background: url("${Background}") no-repeat center center/cover;
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: color;
@@ -94,8 +94,6 @@ export const ContainerHeader = Styled.div`
     height:80%;
     padding-top: 200px ;
     gap: 50px;
-    
-    
     }
     
 `;
@@ -105,6 +103,11 @@ export const ContainerOptions = Styled.div`
     flex-direction: column;
     align-items:flex-start;
     gap: 30px;    
+
+    @media (max-width: 500px) {
+        /* gap: 50px;  */
+    }
+
 `;
 
 export const ImageHeader = Styled.img`
@@ -114,11 +117,15 @@ export const ImageHeader = Styled.img`
     height: auto;
     width: 400px;
 
-    @media (max-width: 900px) {
+    @media (max-width: 750px) {
     width: 300px;
     height: auto;
+    }
 
-  }
+    @media (max-width: 470px) {
+    width: 200px;
+    height: auto;
+    }
 
     
 `;

@@ -7,6 +7,7 @@ import ImgConversor from "../../assets/cconversor.png";
 import ImgBurguer from "../../assets/burguer.png";
 import LojaDeSom from "../../assets/lojaDeSom.png";
 import Spotfy from "../../assets/Spotfy.png";
+import Aéreo from "../../assets/Aéreo-barato.png";
 
 import {
   Navbar,
@@ -47,8 +48,15 @@ function Projects() {
               <p>
                 Conversor de moedas. <br /> Coverta do Real para Dolar, Euro e
                 Bitcoin.
+                <br /> /Html, Css e JS./
               </p>
-              <p className="paragrapMove">Click para saber mais.</p>
+              <a
+                href="https://convertmoney-learn-js-css-html.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Clique para saber mais.
+              </a>
             </ContainerP>
           </GalleryItens>
           <GalleryItens>
@@ -56,49 +64,65 @@ function Projects() {
             <ContainerP>
               <p>
                 Cadastro de pedidos(Hamburgueria). <br /> Adicione ou remova
-                pedidos.
+                pedidos. <br /> /React js e Node js/
               </p>
-              <p className="paragrapMove">Click para saber mais.</p>
-            </ContainerP>
-          </GalleryItens>
-          <GalleryItens>
-            <Image alt="img-Conversor" src={ImgConversor} />
-            <ContainerP>
-              <p>
-                Conversor de moedas. <br /> Coverta do Real para Dolar, Euro e
-                Bitcoin.
-              </p>
-              <p className="paragrapMove">Click para saber mais.</p>
-            </ContainerP>
-          </GalleryItens>
-          <GalleryItens>
-            <Image alt="img-Conversor" src={ImgConversor} />
-            <ContainerP>
-              <p>
-                Conversor de moedas. <br /> Coverta do Real para Dolar, Euro e
-                Bitcoin.
-              </p>
-              <p className="paragrapMove">Click para saber mais.</p>
+              <a
+                href="https://github.com/adrian0sant0s/cadastro-de-pedidos-lanchonete-FrontEnd"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Click para saber mais.
+              </a>
             </ContainerP>
           </GalleryItens>
           <GalleryItens>
             <Image alt="img-LojaDeSom" src={LojaDeSom} />
             <ContainerP>
               <p>
-                Loja de som automotivo. <br /> Coverta do Real para Dolar, Euro
-                e Bitcoin.
+                Loja de som automotivo. <br /> Página de vendas de auto
+                falantes.
+                <br /> /Html e Css/
               </p>
-              <p className="paragrapMove">Click para saber mais.</p>
+              <a
+                href="https://loja-de-som-automotivo.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Click para saber mais.
+              </a>
+            </ContainerP>
+          </GalleryItens>
+          <GalleryItens>
+            <Image alt="img-Aereo-barato" src={Aéreo} />
+            <ContainerP>
+              <p>
+                Aéreo-barato. <br /> página de vendas de passagens aéreas
+                <br /> /Html, Css e JS/
+              </p>
+
+              <a
+                href="https://passagens-aereas-baratas.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Click para saber mais.
+              </a>
             </ContainerP>
           </GalleryItens>
           <GalleryItens>
             <Image alt="img-Spotfy" src={Spotfy} />
             <ContainerP>
               <p>
-                Conversor de moedas. <br /> Coverta do Real para Dolar, Euro e
-                Bitcoin.
+                Spotify. <br /> Clone da pagina inicial do Spotify.
+                <br /> /Html e Css/
               </p>
-              <p className="paragrapMove">Click para saber mais.</p>
+              <a
+                href="https://clone-spotify-learn.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Click para saber mais.
+              </a>
             </ContainerP>
           </GalleryItens>
         </ContainerGallery>

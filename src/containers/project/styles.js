@@ -65,14 +65,13 @@ export const ContainerGallery = Styled.div`
 `;
 
 export const GalleryItens = Styled.div`
-    width: 300px;
-    height: 460px;
+    width: 340px;
+    height: 500px;
 
-    border: 10px solid #FFF;
+    border: 8px solid #FFF;
     box-shadow: 5px 5px 8px #0007;
 
     flex-grow: 1;
-    cursor:pointer;
     transition: transform 1s linear ;
 
     display: flex;
@@ -96,18 +95,25 @@ export const ContainerP = Styled.div`
     p{
         font-style: normal;
         font-weight: bold;
-        line-height: 20px;
+        line-height: 18px;
         color:#eee;
         
-        font-size:20px;
+        font-size:18px;
+        margin-bottom:10px;
     }
 
-    .paragrapMove{
-    
-        font-style: normal;
+    a{
+        text-decoration:none;
+        
+        background: #111;
         color:#eee;
-    
-        font-size:16px;
+        padding: 4px;
+        border-radius:5px;
+
+        &:hover{
+        background:#eee;
+        color:#111;
+        }
     }
 `;
 
