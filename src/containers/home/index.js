@@ -74,6 +74,7 @@ function App() {
             </Button>
           </ContainerOptions>
         </ContainerHeader>
+        <p>Desenvolvedor Front-End jr.</p>
       </Header>
     </>
   );

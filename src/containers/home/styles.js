@@ -79,6 +79,20 @@ export const Header = Styled.div`
     background: url("${Background}") no-repeat center center/cover;
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: color;
+
+     p{
+        position: absolute;
+        left: 50%;
+        top:95% ;
+        transform: translate(-50%);
+        color: white;
+        font-size:1.5rem;
+
+        @media (max-width: 600px) {
+        font-size:1rem;
+        }
+
+    }
 `;
 
 export const ContainerHeader = Styled.div`
@@ -95,7 +109,6 @@ export const ContainerHeader = Styled.div`
     padding-top: 200px ;
     gap: 50px;
     }
-    
 `;
 
 export const ContainerOptions = Styled.div`
@@ -115,7 +128,7 @@ export const ImageHeader = Styled.img`
     border: 2px solid white;
 
     height: auto;
-    width: 400px;
+    width: 340px;
 
     @media (max-width: 750px) {
     width: 300px;
