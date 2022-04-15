@@ -51,7 +51,7 @@ function Projects() {
                 <br /> /Html, Css e JS./
               </p>
               <a
-                href="https://convertmoney-learn-js-css-html.netlify.app/"
+                href="https://conversor-de-moedas-adrianosantos.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >
