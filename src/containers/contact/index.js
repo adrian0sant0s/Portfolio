@@ -58,7 +58,7 @@ function Contacts() {
             </Links>
 
             <Links
-              href="https://api.whatsapp.com/send?phone=5561992393535"
+              href="https://api.whatsapp.com/send?phone=5561994645795"
               target="_blank"
             >
               <AlingItems>
@@ -66,7 +66,7 @@ function Contacts() {
               </AlingItems>
             </Links>
 
-            <Links href="tel:55 61 992393535" target="_blank">
+            <Links href="tel:55 61 994645795" target="_blank">
               <AlingItems>
                 <BsTelephoneForward /> Telefone
               </AlingItems>

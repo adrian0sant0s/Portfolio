@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import Carousel from 'react-elastic-carousel'
 
 import { BiLeftArrow } from "react-icons/bi";
 
@@ -15,9 +16,8 @@ import {
   Button,
   Project,
   Header,
-  ContainerGallery,
-  ContainerP,
-  GalleryItens,
+  Item,
+ 
   Image,
 } from "./styles";
 
@@ -27,6 +27,14 @@ function Projects() {
   function GoBackPage() {
     history.push("/");
   }
+
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 400, itemsToShow: 2 },
+    { width: 600, itemsToShow: 3 },
+    { width: 900, itemsToShow: 4 },
+    { width: 1300, itemsToShow: 5 }
+]
 
   return (
     <>
@@ -41,91 +49,49 @@ function Projects() {
       </Navbar>
 
       <Header>
-        <ContainerGallery>
-          <GalleryItens>
-            <Image alt="img-Conversor" src={ImgConversor} />
-            <ContainerP>
-              <p>
-                Conversor de moedas. <br /> Coverta do Real para Dolar, Euro e
-                Bitcoin.
-                <br /> /Html, Css e JS./
-              </p>
-              <a
-                href="https://conversor-de-moedas-adrianosantos.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Clique para saber mais.
-              </a>
-            </ContainerP>
-          </GalleryItens>
-          <GalleryItens>
-            <Image alt="img-Burguer" src={ImgBurguer} />
-            <ContainerP>
-              <p>
-                Cadastro de pedidos(Hamburgueria). <br /> Adicione ou remova
-                pedidos. <br /> /React js e Node js/
-              </p>
-              <a
-                href="https://github.com/adrian0sant0s/cadastro-de-pedidos-lanchonete-FrontEnd"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Click para saber mais.
-              </a>
-            </ContainerP>
-          </GalleryItens>
-          <GalleryItens>
-            <Image alt="img-LojaDeSom" src={LojaDeSom} />
-            <ContainerP>
-              <p>
-                Loja de som automotivo. <br /> Página de vendas de auto
-                falantes.
-                <br /> /Html e Css/
-              </p>
-              <a
-                href="https://loja-de-som-automotivo.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Click para saber mais.
-              </a>
-            </ContainerP>
-          </GalleryItens>
-          <GalleryItens>
-            <Image alt="img-Aereo-barato" src={Aéreo} />
-            <ContainerP>
-              <p>
-                Aéreo-barato. <br /> página de vendas de passagens aéreas
-                <br /> /Html, Css e JS/
-              </p>
+        <Carousel itemsToShow={1}
+                style={{ width: '90%'}}
+                breakPoints={breakPoints}>
+          <Item >
+              <Image src={ImgConversor} alt="foto da categoria" />
+              <a href="https://conversor-de-moedas-adrianosantos.netlify.app/" target='blank'>
+                  <input type="button" value="Click para saber mais"/>
 
-              <a
-                href="https://passagens-aereas-baratas.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Click para saber mais.
               </a>
-            </ContainerP>
-          </GalleryItens>
-          <GalleryItens>
-            <Image alt="img-Spotfy" src={Spotfy} />
-            <ContainerP>
-              <p>
-                Spotify. <br /> Clone da pagina inicial do Spotify.
-                <br /> /Html e Css/
-              </p>
-              <a
-                href="https://clone-spotify-learn.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Click para saber mais.
+          </Item>
+
+          <Item>
+          <Image src={ImgBurguer} alt="foto da categoria" />
+          <a href="https://github.com/adrian0sant0s/cadastro-de-pedidos-lanchonete-FrontEnd" target='blank'>
+                  <input type="button" value="Click para saber mais"/>
               </a>
-            </ContainerP>
-          </GalleryItens>
-        </ContainerGallery>
+          </Item>  
+
+          <Item>
+            <Image src={LojaDeSom} alt="foto da categoria" />
+            <a href="https://loja-de-som-automotivo.netlify.app/" target='blank'>
+                  <input type="button" value="Click para saber mais"/>
+              </a>
+          </Item>  
+
+          <Item>  
+            <Image src={Spotfy} alt="foto da categoria" />
+            <a href="https://passagens-aereas-baratas.netlify.app/" target='blank'>
+                  <input type="button" value="Click para saber mais"/>
+              </a>
+          </Item>  
+
+        <Item>
+            <Image src={Aéreo} alt="foto da categoria" />
+            <a href="https://clone-spotify-learn.netlify.app/" target='blank'>
+                  <input type="button" value="Click para saber mais"/>
+              </a>
+        </Item>     
+                
+
+          
+        </Carousel>
+       
       </Header>
     </>
   );

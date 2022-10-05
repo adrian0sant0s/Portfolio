@@ -42,17 +42,12 @@ function More() {
             <br /> Estou em busca de oportunidades e desafios, sempre procurando
             evoluir e adquirir conhecimentos.
             <br /> Atualmente tenho conhecimento nas seguintes tecnologias:{" "}
-            <br />- Front-End = JavaScript, React.JS(React Hooks,
-            React-router-dom Styled-components, Axios), Html, Css, Figma(Criar
-            aplicações baseado em designers do figma).
-            <br />
-            - Back-End = Node.js, Express, consumo de APIs.
-            <br /> Atualmente venho aprendendo e trabalhando com Docker, MySQL,
-            Postbird, insomnia, versionamentos com Git e GitHub.
+            <br />Html, Css, JavaScript, React, Context api, Styled 
+            components, Hooks, Node Js, Express, Git, MongoDb, Postgres.
             <br />
             Atualmente estou em finalização do curso Dev Club, curso de
             desenvolvimento FullStack, alem das tecnologias citadas acima, nesse
-            curso tambem aprendemos sobre React Native, Api Rest e outros,
+            curso tambem aprendemos sobre React Native,
             fizemos projetos de qualidade e perfomance simulando o dia a dia nas
             empresas. O curso tbm conta com uma comunidade onde podemos ajudar e
             trocar ideias com centenas de outros alunos.

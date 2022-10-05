@@ -52,73 +52,53 @@ export const Project = Styled.h1`
 export const Header = Styled.div`
     min-height: 100vh;
     background: url("${Background}") no-repeat center center/cover;
-`;
-
-export const ContainerGallery = Styled.div`
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 2vw;
-    padding: 100px 30px 0 30px;
-
-`;
-
-export const GalleryItens = Styled.div`
-    width: 340px;
-    height: 500px;
-
-    border: 8px solid #FFF;
-    box-shadow: 5px 5px 8px #0007;
-
-    flex-grow: 1;
-    transition: transform 1s linear ;
-
     display: flex;
     justify-content: center;
-    align-items:space-between;
-    flex-wrap:wrap;
+    align-items: center;
 
-    background-color: #1118;
-    padding: 6px;
-
-    text-align:center;
-
-    &:hover{
-        transform: scale(1.1);
-        transition: transform 0.6s ;
+    .rec.rec-arrow {
+        background-color: black;
+        color: #efefef;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
+
+    
+
+    .rec.rec-arrow:hover {
+        border: 2px solid black;
+        background-color: #efefef;
+        color: black;
+    }
+
+    .rec.rec-arrow:disabled {
+        border: none;
+        background-color: #bebebf;
+        color: #efefef;
+    }
+
+    
 `;
 
-export const ContainerP = Styled.div`
 
-    p{
-        font-style: normal;
-        font-weight: bold;
-        line-height: 18px;
-        color:#eee;
-        
-        font-size:18px;
-        margin-bottom:10px;
-    }
-
-    a{
-        text-decoration:none;
-        
-        background: #111;
-        color:#eee;
-        padding: 4px;
-        border-radius:5px;
-
-        &:hover{
-        background:#eee;
-        color:#111;
-        }
-    }
-`;
 
 export const Image = Styled.img`
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
+     width: 250px;
+     height: 180px;
 `;
+
+export const Item = Styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+   
+
+    input{
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight:bold;
+        padding-left: 55px;
+
+    }
+`
