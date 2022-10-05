@@ -100,5 +100,9 @@ export const Item = Styled.div`
         font-weight:bold;
         padding-left: 55px;
 
+        :hover{
+            opacity:0.8;
+        }
+
     }
 `

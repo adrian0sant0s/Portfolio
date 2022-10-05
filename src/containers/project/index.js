@@ -53,7 +53,7 @@ function Projects() {
                 style={{ width: '90%'}}
                 breakPoints={breakPoints}>
           <Item >
-              <Image src={ImgConversor} alt="foto da categoria" />
+              <Image src={ImgConversor} alt="foto do conversor" />
               <a href="https://conversor-de-moedas-adrianosantos.netlify.app/" target='blank'>
                   <input type="button" value="Click para saber mais"/>
 
@@ -61,29 +61,29 @@ function Projects() {
           </Item>
 
           <Item>
-          <Image src={ImgBurguer} alt="foto da categoria" />
+          <Image src={ImgBurguer} alt="foto da hamburgueria" />
           <a href="https://github.com/adrian0sant0s/cadastro-de-pedidos-lanchonete-FrontEnd" target='blank'>
                   <input type="button" value="Click para saber mais"/>
               </a>
           </Item>  
 
           <Item>
-            <Image src={LojaDeSom} alt="foto da categoria" />
+            <Image src={LojaDeSom} alt="foto da loja de som" />
             <a href="https://loja-de-som-automotivo.netlify.app/" target='blank'>
                   <input type="button" value="Click para saber mais"/>
               </a>
           </Item>  
 
           <Item>  
-            <Image src={Spotfy} alt="foto da categoria" />
-            <a href="https://passagens-aereas-baratas.netlify.app/" target='blank'>
+            <Image src={Spotfy} alt="foto do clone do spotfy" />
+            <a href="https://clone-spotify-learn.netlify.app/" target='blank'>
                   <input type="button" value="Click para saber mais"/>
               </a>
           </Item>  
 
         <Item>
-            <Image src={Aéreo} alt="foto da categoria" />
-            <a href="https://clone-spotify-learn.netlify.app/" target='blank'>
+            <Image src={Aéreo} alt="foto da página de passagens aéreas" />
+            <a href="https://passagens-aereas-baratas.netlify.app/"  target='blank'>
                   <input type="button" value="Click para saber mais"/>
               </a>
         </Item>     
