@@ -80,14 +80,6 @@ export const ContainerInfo = Styled.div`
         margin-bottom: 20px;
     }
 
-    img{
-        width: 200px;
-        height: 210px;
-        border: 1px solid #eee;
-        border-radius: 50%;
-        object-fit: cover;   
-        margin-top:20px
-    }
 
     p{
         font-size: 1.8rem;

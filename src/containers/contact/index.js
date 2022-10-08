@@ -8,8 +8,6 @@ import { BsTelephoneForward } from "react-icons/bs";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
 
-import BackgroundImage from "../../assets/foto.jpeg";
-
 import {
   Navbar,
   ContainerNavbar,
@@ -44,7 +42,7 @@ function Contacts() {
 
       <Header>
         <ContainerInfo>
-          <img alt="Foto-Adriano" src={BackgroundImage} />
+          
           <p>Adriano Santos</p>
           <p>Dev Front-End jr.</p>
           <ContainerLinks>

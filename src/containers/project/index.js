@@ -4,8 +4,8 @@ import Carousel from 'react-elastic-carousel'
 
 import { BiLeftArrow } from "react-icons/bi";
 
-import ImgConversor from "../../assets/cconversor.png";
-import ImgBurguer from "../../assets/burguer.png";
+import ImgConversor from "../../assets/conversor.jpg";
+import ImgBurguer from "../../assets/codeBurguer.jpg";
 import LojaDeSom from "../../assets/lojaDeSom.png";
 import Spotfy from "../../assets/Spotfy.png";
 import Aéreo from "../../assets/Aéreo-barato.png";
@@ -53,6 +53,7 @@ function Projects() {
                 style={{ width: '90%'}}
                 breakPoints={breakPoints}>
           <Item >
+              <p>Conversor de moedas</p>
               <Image src={ImgConversor} alt="foto do conversor" />
               <a href="https://conversor-de-moedas-adrianosantos.netlify.app/" target='blank'>
                   <input type="button" value="Click para saber mais"/>
@@ -61,6 +62,7 @@ function Projects() {
           </Item>
 
           <Item>
+          <p>Cadastro de pedidos</p>
           <Image src={ImgBurguer} alt="foto da hamburgueria" />
           <a href="https://github.com/adrian0sant0s/cadastro-de-pedidos-lanchonete-FrontEnd" target='blank'>
                   <input type="button" value="Click para saber mais"/>
@@ -68,13 +70,15 @@ function Projects() {
           </Item>  
 
           <Item>
+          <p>Loja de som</p>
             <Image src={LojaDeSom} alt="foto da loja de som" />
             <a href="https://loja-de-som-automotivo.netlify.app/" target='blank'>
                   <input type="button" value="Click para saber mais"/>
               </a>
           </Item>  
 
-          <Item>  
+          <Item>
+          <p>Clone do spotfy</p>  
             <Image src={Spotfy} alt="foto do clone do spotfy" />
             <a href="https://clone-spotify-learn.netlify.app/" target='blank'>
                   <input type="button" value="Click para saber mais"/>
@@ -82,6 +86,7 @@ function Projects() {
           </Item>  
 
         <Item>
+        <p>Página de passagens aéreas</p>
             <Image src={Aéreo} alt="foto da página de passagens aéreas" />
             <a href="https://passagens-aereas-baratas.netlify.app/"  target='blank'>
                   <input type="button" value="Click para saber mais"/>
