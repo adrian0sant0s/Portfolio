@@ -10,6 +10,7 @@ import LojaDeSom from "../../assets/lojaDeSom.png";
 import Spotfy from "../../assets/Spotfy.png";
 import Aéreo from "../../assets/Aéreo-barato.png";
 import ToDoList from "../../assets/toDoList.png";
+import Calculator from "../../assets/calculator.png";
 
 import {
   Navbar,
@@ -79,6 +80,17 @@ function Projects() {
           <Item>
             <p>Cadastro de pedidos</p>
             <Image src={ImgBurguer} alt="foto da hamburgueria" />
+            <a
+              href="https://github.com/adrian0sant0s/cadastro-de-pedidos-lanchonete-FrontEnd"
+              target="blank"
+            >
+              <input type="button" value="Click para saber mais" />
+            </a>
+          </Item>
+
+          <Item>
+            <p>Calculator</p>
+            <Image src={Calculator} alt="foto da calculadora" />
             <a
               href="https://github.com/adrian0sant0s/cadastro-de-pedidos-lanchonete-FrontEnd"
               target="blank"
