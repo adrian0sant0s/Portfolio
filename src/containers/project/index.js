@@ -59,7 +59,7 @@ function Projects() {
             <p>To do list</p>
             <Image src={ToDoList} alt="foto to do list" />
             <a
-              href="https://peaceful-kitten-9855ae.netlify.app/"
+              href="https://to-do-list-adrianosantos.netlify.app/"
               target="blank"
             >
               <input type="button" value="Click para saber mais" />
@@ -92,7 +92,7 @@ function Projects() {
             <p>Calculator</p>
             <Image src={Calculator} alt="foto da calculadora" />
             <a
-              href="https://github.com/adrian0sant0s/cadastro-de-pedidos-lanchonete-FrontEnd"
+              href="https://calculator-adrianosantos.netlify.app/"
               target="blank"
             >
               <input type="button" value="Click para saber mais" />
