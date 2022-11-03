@@ -11,6 +11,7 @@ import Spotfy from "../../assets/Spotfy.png";
 import Aéreo from "../../assets/Aéreo-barato.png";
 import ToDoList from "../../assets/toDoList.png";
 import Calculator from "../../assets/calculator.png";
+import Quiz from "../../assets/quiz.png";
 
 import {
   Navbar,
@@ -71,6 +72,17 @@ function Projects() {
             <Image src={ImgConversor} alt="foto do conversor" />
             <a
               href="https://conversor-de-moedas-adrianosantos.netlify.app/"
+              target="blank"
+            >
+              <input type="button" value="Click para saber mais" />
+            </a>
+          </Item>
+
+          <Item>
+            <p>Quiz copa do mundo</p>
+            <Image src={Quiz} alt="foto do quiz" />
+            <a
+              href="https://quiz-copadomundo-adrianosantos.netlify.app/"
               target="blank"
             >
               <input type="button" value="Click para saber mais" />
