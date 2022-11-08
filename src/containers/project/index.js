@@ -3,15 +3,7 @@ import { useHistory } from "react-router-dom";
 import Carousel from "react-elastic-carousel";
 
 import { BiLeftArrow } from "react-icons/bi";
-
-import ImgConversor from "../../assets/conversor.jpg";
-import ImgBurguer from "../../assets/codeBurguer.jpg";
-import LojaDeSom from "../../assets/lojaDeSom.png";
-import Spotfy from "../../assets/Spotfy.png";
-import Aéreo from "../../assets/Aéreo-barato.png";
-import ToDoList from "../../assets/toDoList.png";
-import Calculator from "../../assets/calculator.png";
-import Quiz from "../../assets/quiz.png";
+import ListProjects from "../../data/ListProjects";
 
 import {
   Navbar,
@@ -56,90 +48,17 @@ function Projects() {
           style={{ width: "90%" }}
           breakPoints={breakPoints}
         >
-          <Item>
-            <p>Quiz copa do mundo</p>
-            <Image src={Quiz} alt="foto do quiz" />
-            <a
-              href="https://quiz-copadomundo-adrianosantos.netlify.app/"
-              target="blank"
-            >
-              <input type="button" value="Click para saber mais" />
-            </a>
-          </Item>
-
-          <Item>
-            <p>To do list</p>
-            <Image src={ToDoList} alt="foto to do list" />
-            <a
-              href="https://to-do-list-adrianosantos.netlify.app/"
-              target="blank"
-            >
-              <input type="button" value="Click para saber mais" />
-            </a>
-          </Item>
-
-          <Item>
-            <p>Conversor de moedas</p>
-            <Image src={ImgConversor} alt="foto do conversor" />
-            <a
-              href="https://conversor-de-moedas-adrianosantos.netlify.app/"
-              target="blank"
-            >
-              <input type="button" value="Click para saber mais" />
-            </a>
-          </Item>
-
-          <Item>
-            <p>Cadastro de pedidos</p>
-            <Image src={ImgBurguer} alt="foto da hamburgueria" />
-            <a
-              href="https://github.com/adrian0sant0s/cadastro-de-pedidos-lanchonete-FrontEnd"
-              target="blank"
-            >
-              <input type="button" value="Click para saber mais" />
-            </a>
-          </Item>
-
-          <Item>
-            <p>Calculator</p>
-            <Image src={Calculator} alt="foto da calculadora" />
-            <a
-              href="https://calculator-adrianosantos.netlify.app/"
-              target="blank"
-            >
-              <input type="button" value="Click para saber mais" />
-            </a>
-          </Item>
-
-          <Item>
-            <p>Loja de som</p>
-            <Image src={LojaDeSom} alt="foto da loja de som" />
-            <a
-              href="https://loja-de-som-automotivo.netlify.app/"
-              target="blank"
-            >
-              <input type="button" value="Click para saber mais" />
-            </a>
-          </Item>
-
-          <Item>
-            <p>Clone do spotfy</p>
-            <Image src={Spotfy} alt="foto do clone do spotfy" />
-            <a href="https://clone-spotify-learn.netlify.app/" target="blank">
-              <input type="button" value="Click para saber mais" />
-            </a>
-          </Item>
-
-          <Item>
-            <p>Página de passagens aéreas</p>
-            <Image src={Aéreo} alt="foto da página de passagens aéreas" />
-            <a
-              href="https://passagens-aereas-baratas.netlify.app/"
-              target="blank"
-            >
-              <input type="button" value="Click para saber mais" />
-            </a>
-          </Item>
+          {ListProjects.map((list) => {
+            return (
+              <Item>
+                <p>{list.title}</p>
+                <Image src={list.image} alt="foto do quiz" />
+                <a href={list.projectLink} target="blank">
+                  <input type="button" value="Click para saber mais" />
+                </a>
+              </Item>
+            );
+          })}
         </Carousel>
       </Header>
     </>
