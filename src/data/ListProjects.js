@@ -6,6 +6,7 @@ import Aéreo from "../assets/Aéreo-barato.png";
 import ToDoList from "../assets/toDoList.png";
 import Calculator from "../assets/calculator.png";
 import Quiz from "../assets/quiz.png";
+import CEP from "../assets/cep.png";
 
 const Projects = [
   {
@@ -37,6 +38,12 @@ const Projects = [
     title: "Calculator",
     image: Calculator,
     projectLink: "https://calculator-adrianosantos.netlify.app/",
+  },
+
+  {
+    title: "Buscador de CEP",
+    image: CEP,
+    projectLink: "https://bucar-cep-adrianosantos.netlify.app/",
   },
 
   {
