@@ -7,8 +7,14 @@ import ToDoList from "../assets/toDoList.png";
 import Calculator from "../assets/calculator.png";
 import Quiz from "../assets/quiz.png";
 import CEP from "../assets/cep.png";
+import MemorieGame from "../assets/memorie-game.png";
 
 const Projects = [
+  {
+    title: "Memorie game",
+    image: MemorieGame,
+    projectLink: "https://adrianosantos-memorygame.netlify.app/",
+  },
   {
     title: "Quiz copa do mundo",
     image: Quiz,
