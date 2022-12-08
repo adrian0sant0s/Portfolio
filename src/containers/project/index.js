@@ -52,14 +52,15 @@ function Projects() {
             return (
               <Item>
                 <p>{list.title}</p>
-                <Image src={list.image} alt="foto do quiz" />
+
                 <a href={list.projectLink} target="blank">
-                  <input type="button" value="Click para saber mais" />
+                  <Image src={list.image} alt="foto do quiz" />
                 </a>
               </Item>
             );
           })}
         </Carousel>
+        <span>Click sobre a imagem para saber mais</span>
       </Header>
     </>
   );

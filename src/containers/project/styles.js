@@ -82,6 +82,17 @@ export const Header = Styled.div`
         box-shadow: 0 0 1px 3px #333333;
     }
 
+    span{
+        position: absolute;
+        background-color: #111111;
+        color:#eee;
+        border-radius: 5px;
+        padding: 10px;
+        bottom:10%;
+
+        
+    }
+
 `;
 
 export const Item = Styled.div`
@@ -99,7 +110,7 @@ export const Item = Styled.div`
     }
 
 
-    input{
+    /* input{
         background-color: #696969;
         cursor: pointer;
         font-size: 12px;
@@ -112,9 +123,9 @@ export const Item = Styled.div`
             opacity:0.8;
         }
 
-    }
-`
-    export const Image = Styled.img`
+    } */
+`;
+export const Image = Styled.img`
     background-color: #333333;
      width: 250px;
      height: 200px;
@@ -124,4 +135,3 @@ export const Item = Styled.div`
      padding: 3px;
      
 `;
-
