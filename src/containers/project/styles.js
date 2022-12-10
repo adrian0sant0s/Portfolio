@@ -102,28 +102,12 @@ export const Item = Styled.div`
     gap: 16px;
    
     p{
-        font-size: 15px;
-        font-weight:bold;
-        color:#333333;
-        border: none;
-        border-radius: 10px;
+        font-weight: bold;
+        font-size: 120%
     }
 
 
-    /* input{
-        background-color: #696969;
-        cursor: pointer;
-        font-size: 12px;
-        color:white;
-        padding:10px;
-        border: none;
-        border-radius: 10px;
-        
-        :hover{
-            opacity:0.8;
-        }
-
-    } */
+   
 `;
 export const Image = Styled.img`
     background-color: #333333;

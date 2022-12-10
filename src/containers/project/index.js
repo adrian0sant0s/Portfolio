@@ -51,11 +51,10 @@ function Projects() {
           {ListProjects.map((list) => {
             return (
               <Item>
-                <p>{list.title}</p>
-
                 <a href={list.projectLink} target="blank">
                   <Image src={list.image} alt="foto do quiz" />
                 </a>
+                <p>{list.title}</p>
               </Item>
             );
           })}
