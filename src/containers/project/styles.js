@@ -87,10 +87,10 @@ export const Header = Styled.div`
         background-color: #111111;
         color:#eee;
         border-radius: 5px;
-        padding: 10px;
+        padding: 5px;
         bottom:10%;
+        opacity:0.5;
 
-        
     }
 
 `;
