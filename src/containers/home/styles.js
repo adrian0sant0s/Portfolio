@@ -26,14 +26,14 @@ export const ContainerNavbar = Styled.div`
 `;
 
 export const Logo = Styled.h1`
-    font-size: 2.8rem;
+    font-size: 2.3rem;
 
     @media (max-width: 900px) {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     }
 
-    @media (max-width: 410px) {
-    font-size: 1.7rem;
+    @media (max-width: 450px) {
+    font-size: 1.5rem;
     flex-wrap:wrap;
     }
 `;
@@ -42,10 +42,18 @@ export const ContainerLinks = Styled.div`
     display: flex;
     gap: 80px;
 
-    @media (max-width: 900px) {
+    @media (max-width: 650px) {
+        gap: 30px
+    }
+    
+    @media (max-width: 550px) {
     display:flex ;
     flex-direction:column;
-    gap:3px;
+    gap:5px;
+    }
+
+    @media (max-width: 450px) {
+        gap: 9px
     }
 `;
 
@@ -55,14 +63,18 @@ export const Links = Styled.a`
     font-style: normal;
     font-weight: bold;
     color:#eee;
-    font-size: 2rem;
+    font-size: 1.8rem;
 
     @media (max-width: 900px) {
-    font-size:1.9rem;
+    font-size:1.5rem;
+    }
+
+    @media (max-width: 700px) {
+    font-size:1.2rem;
     }
 
     @media (max-width: 450px) {
-    font-size: 1.5rem;
+    font-size: 1rem;
     }
 
     &:hover{
@@ -92,6 +104,9 @@ export const Header = Styled.div`
         font-size:1rem;
         }
 
+        @media (max-width: 400px) {
+        font-size:0.8rem;
+        }
     }
 `;
 
@@ -107,7 +122,13 @@ export const ContainerHeader = Styled.div`
     @media (max-width: 450px) {
     height:80%;
     padding-top: 200px ;
-    gap: 50px;
+    gap: 15px;
+    }
+
+    @media (max-width: 550px) {
+        margin-right: 20px;
+        margin-left: 20px;
+
     }
 `;
 
@@ -117,8 +138,12 @@ export const ContainerOptions = Styled.div`
     align-items:flex-start;
     gap: 30px;    
 
-    @media (max-width: 500px) {
-        /* gap: 50px;  */
+    @media (max-width: 550px) {
+        margin-right: 20px;
+    }
+
+    @media (max-width: 470px) {
+        gap: 5px;
     }
 
 `;
@@ -128,10 +153,10 @@ export const ImageHeader = Styled.img`
     border: 2px solid white;
 
     height: auto;
-    width: 340px;
+    width: 280px;
 
-    @media (max-width: 750px) {
-    width: 300px;
+    @media (max-width: 700px) {
+    width: 250px;
     height: auto;
     }
 
@@ -154,9 +179,22 @@ export const Button = Styled.button`
     background:none;
     border:none;
 
+    @media (max-width: 470px) {
+        font-size: 1.5rem;
+    }
+
     &:hover{
     transform: scale(1.5);
     transition: transform 0.5s ;
+
+    @media (max-width: 580px) {
+        transform: scale(1.2)
+    }
+
+    @media (max-width: 450px) {
+        transform: scale(1.1)
+    }
+
     }
 
     &:active{
